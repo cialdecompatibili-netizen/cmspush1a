@@ -8,8 +8,8 @@
 #      Markdown formatted page while the second is generated using JSON.
 
 main:
-  - title: "Publications"
-    url: /publications/
+  - title: "Blog"
+    url: /year-archive/
 
   - title: "Talks"
     url: /talks/    
@@ -20,9 +20,6 @@ main:
   - title: "Portfolio"
     url: /portfolio/
         
-  - title: "Blog Posts"
-    url: /year-archive/
-    
   - title: "CV"
     url: /cv/
     
@@ -31,3 +28,15 @@ main:
     
   - title: "Guide"
     url: /markdown/
+
+# Sidebar navigation per la pagina Blog — sistema nativo del tema (nav_list),
+# supporta children/sottomenu senza toccare il masthead. Vedi _includes/nav_list.
+blog_sidebar:
+  - title: "Blog"
+    children:
+      - title: "Tutti gli articoli"
+        url: /year-archive/
+      - title: "Categorie"
+        url: /categories/
+      - title: "Tag"
+        url: /tags/
